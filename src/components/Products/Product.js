@@ -11,7 +11,7 @@ const images = [
     snicker3,
     snicker4
   ];
-const Produc=()=>{
+const Product=()=>{
 
     const[currentUpImg,setcurrentUpImg]=useState(snicker1);
     const[isOpen,SetIsOpen]=useState(false)
@@ -19,8 +19,7 @@ const Produc=()=>{
 
     const handleClickPreviewImg = ()=>{
      
-        let index = images.findIndex(item => item=== currentUpImg)
-        setphotoIndex(index)
+        
         SetIsOpen(true);
          
     }
@@ -85,4 +84,4 @@ const Produc=()=>{
     )
 }
 
-export default Produc;
+export default Product;
