@@ -19,22 +19,22 @@ const AddNewProduct =()=>{
             color:color
         }
 
-        // localStorage.setItem("producList",JSON.stringify(object))
+        // localStorage.setItem("productList",JSON.stringify(object));
 
-        let producList = localStorage.getItem("producList")
+        let productList = localStorage.getItem("productList")
 
-        console.log(">>> check produc List", JSON.parse(producList))
+        console.log(">>> check product List", JSON.parse(productList))
    
-        if(producList){
-            let arr = JSON.parse(producList);
+        if(productList){
+            let arr = JSON.parse(productList);
             console.log("check arr:",arr)
             arr.push((object))
             
-            localStorage.setItem("producList",JSON.stringify(arr))
+            localStorage.setItem("productList",JSON.stringify(arr))
             
         }
         else{
-            localStorage.setItem("producList",JSON.stringify([object]))
+            localStorage.setItem("productList",JSON.stringify([object]))
         }
  
         setName("");
@@ -97,7 +97,7 @@ const AddNewProduct =()=>{
         </div>
         <div>
             Produc List :
-            <div> {localStorage.getItem('producList')}</div>
+            <div> {localStorage.getItem('productList')}</div>
         </div>
         
     </>

@@ -74,7 +74,7 @@ const Produc=()=>{
             mainSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
             prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-            onCloseRequest={() => this.setState({ isOpen: false })}
+            onCloseRequest={() => SetIsOpen(false )}
             onMovePrevRequest={ () =>setphotoIndex((photoIndex + images.length - 1) % images.length)}
             onMoveNextRequest={() => setphotoIndex((photoIndex + 1) % images.length,)}
             
